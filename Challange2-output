@@ -1,0 +1,113 @@
+C:\Users\testuser> Invoke-RestMethod -Headers @{"Metadata"="true"} -Method GET -Proxy $Null -Uri "http://169.254.169.
+54/metadata/instance?api-version=2020-09-01" | ConvertTo-Json -Depth 64
+
+   "compute":  {
+                   "azEnvironment":  "AzurePublicCloud",
+                   "customData":  "",
+                   "isHostCompatibilityLayerVm":  "false",
+                   "licenseType":  "",
+                   "location":  "eastus",
+                   "name":  "testvm",
+                   "offer":  "WindowsServer",
+                   "osProfile":  {
+                                     "adminUsername":  "",
+                                     "computerName":  ""
+                                 },
+                   "osType":  "Windows",
+                   "placementGroupId":  "",
+                   "plan":  {
+                                "name":  "",
+                                "product":  "",
+                                "publisher":  ""
+                            },
+                   "platformFaultDomain":  "0",
+                   "platformUpdateDomain":  "0",
+                   "provider":  "Microsoft.Compute",
+                   "publicKeys":  [
+
+                                  ],
+                   "publisher":  "MicrosoftWindowsServer",
+                   "resourceGroupName":  "testrg",
+                   "resourceId":  "/subscriptions/5exxxd2f-xxx-419a-xxxx-ad23xxxd98f/resourceGroups/testrg/providers/
+icrosoft.Compute/virtualMachines/testvm",
+                   "securityProfile":  {
+                                           "secureBootEnabled":  "false",
+                                           "virtualTpmEnabled":  "false"
+                                       },
+                   "sku":  "2016-Datacenter",
+                   "storageProfile":  {
+                                          "dataDisks":  [
+
+                                                        ],
+                                          "imageReference":  {
+                                                                 "id":  "",
+                                                                 "offer":  "WindowsServer",
+                                                                 "publisher":  "MicrosoftWindowsServer",
+                                                                 "sku":  "2016-Datacenter",
+                                                                 "version":  "latest"
+                                                             },
+                                          "osDisk":  {
+                                                         "caching":  "ReadWrite",
+                                                         "createOption":  "FromImage",
+                                                         "diffDiskSettings":  {
+                                                                                  "option":  ""
+                                                                              },
+                                                         "diskSizeGB":  "127",
+                                                         "encryptionSettings":  {
+                                                                                    "enabled":  "false"
+                                                                                },
+                                                         "image":  {
+                                                                       "uri":  ""
+                                                                   },
+                                                         "managedDisk":  {
+                                                                             "id":  "/subscriptions/5exxxd2f-xxxx-419a-
+xxx-ad2xxxx98f/resourceGroups/testrg/providers/Microsoft.Compute/disks/testvm_disk1_71693f66d11f4838bf8fd49ab491500d"
+
+                                                                             "storageAccountType":  "Standard_LRS"
+                                                                         },
+                                                         "name":  "testvm_disk1_71693f66d11f4838bf8fd49ab491500d",
+                                                         "osType":  "Windows",
+                                                         "vhd":  {
+                                                                     "uri":  ""
+                                                                 },
+                                                         "writeAcceleratorEnabled":  "false"
+                                                     }
+                                      },
+                   "subscriptionId":  "subscriptions/5exxxd2f-xxxx-419a-
+xxx-ad2xxxx98f",
+                   "tags":  "",
+                   "tagsList":  [
+
+                                ],
+                   "version":  "14393.4350.2104091630",
+                   "vmId":  "ca6e4c25-da8a-40ff-8ced-e246e79687bf",
+                   "vmScaleSetName":  "",
+                   "vmSize":  "Standard_DS1_v2",
+                   "zone":  ""
+               },
+   "network":  {
+                   "interface":  [
+                                     {
+                                       "ipv4":  {
+                                                      "ipAddress":  [
+                                                                        {
+                                                                            "privateIpAddress":  "10.0.0.4",
+                                                                            "publicIpAddress":  "20.185.242.57"
+                                                                        }
+                                                                    ],
+                                                      "subnet":  [
+                                                                     {
+                                                                         "address":  "10.0.0.0",
+                                                                         "prefix":  "24"
+                                                                     }
+                                                                 ]
+                                                  },
+                                         "ipv6":  {
+                                                      "ipAddress":  [
+
+                                                                    ]
+                                                  },
+                                         "macAddress":  "000D3A56E980"
+                                     }
+                                 ]
+               }
