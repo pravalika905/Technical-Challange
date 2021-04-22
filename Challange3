@@ -1,10 +1,10 @@
-const obj = {"a1":{"b1":{"c1":"d1"}}}
-const keys = ['a1', 'b1', 'c1']
-const obj = {"a1":{"b1":{"c1":"d1"}}}
-const keys = ['a1', 'b1', 'c1']
-value = a1
+const obj = {"a":{"b":{"c":"d"}}}
+const keys = ['a', 'b', 'c']
+const obj = {"x":{"y":{"z":"a"}}}
+const keys = ['x', 'y', 'z']
+value = a
 
-const value = keys.reduce((acc,key)=>acc[key], obj)// "a1"
+const value = keys.reduce((acc,key)=>acc[key], obj)// "a"
 As a function that accepts an array of keys or a string of the form 'x1.y1.z1', with a fallback for undefined values:
 
 const getValueFromKeys = (obj, keys, defaultValue)=> (Array.isArray(keys)?keys:keys.split('.')).reduce((acc,key)=>acc[key] || defaultValue, obj)
